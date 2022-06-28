@@ -17,10 +17,10 @@ c.execute('ALTER TABLE info ADD date')
 conn.commit()
 
 infomation = [
-    ['mike4',40,'wanmen'],
-    ['mike4',20,'wanmen'],
-    ['mike4',"30",''],
-    ['mike4',"45",'wanmen123123123'],
+    ['mike4', 40, 'wanmen'],
+    ['mike4', 20, 'wanmen'],
+    ['mike4', "30", ''],
+    ['mike4', "45", 'wanmen123123123'],
 ]
 c.executemany('INSERT INTO info VALUES (?,?,?)', infomation)
 conn.commit()
@@ -29,7 +29,7 @@ conn.commit()
 name = 'hike'
 age = 50
 school = 'wanmendaxue'
-c.execute('INSERT INTO info VALUES ("%s","%s","%s")'%(name,age,school))
+c.execute('INSERT INTO info VALUES ("%s","%s","%s")' % (name, age, school))
 conn.commit()
 
 # 数据查询
