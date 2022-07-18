@@ -29,7 +29,7 @@ for row in result_list:
     ws.append(row)
 wb.save(filename='111.xlsx')
 
-for x in ws.iter_rows(min_row=1):
+for x in ws.iter_rows(min_row=2):
     temp_row=[]
     for y in x:
         temp_row.append(y.value)
